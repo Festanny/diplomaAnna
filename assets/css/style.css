@@ -29,21 +29,17 @@ input,
 textarea {
     width: 100%;
     font-size: 12px;
-    padding: 0.77vw;
+    padding: 10px;
     border: 0;
     outline: none;
-    background-color: var(--light-gray);
-    border: 1px solid transparent
 }
 input:focus,
-input.error,
-textarea:focus,
-textarea.error {
-    border-color: var(--red)
+textarea:focus {
+    outline: none;
 }
 .siteBlock {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: auto 1fr;
     gap: 34px;
 }
 .siteBlock .header {
@@ -55,7 +51,6 @@ textarea.error {
     background-color: var(--green);
     color: var(--white);
     padding: 34px 34px 15px 34px;
-    font-size: 20px;
 }
 .siteBlock .header a {
     color: var(--white);
@@ -103,6 +98,7 @@ textarea.error {
     display: flex;
     flex-direction: column;
     gap: 88px;
+    font-size: 18px;
 }
 .siteBlock .header .search-weather .weatherCity {
     display: flex;
@@ -113,4 +109,30 @@ textarea.error {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    font-size: 20px;
+}
+.siteBlock .blockMain {
+    padding: 43px 53px 0 0;
+}
+.siteBlock .blockMain .head {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 36px;
+}
+.siteBlock .blockMain .head .titlePage {
+    font-size: 40px;
+    font-weight: 500;
+}
+.siteBlock .blockMain .head .searchNews label {
+    display: flex;
+    border-bottom: 1px solid var(--dark);
+}
+.siteBlock .blockMain .head .searchNews {
+    border-left: 1px solid var(--dark);
+    padding-left: 30px;
+}
+.siteBlock .blockMain .head .searchNews input {
+    padding: 0 5px 5px 5px;
 }
